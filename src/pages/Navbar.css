@@ -1,0 +1,113 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+  }
+  
+  .navbar-logo a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+  }
+  .navbar-innerlinks{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 0;
+    
+  }
+  
+  .navbar-links li {
+    margin-left: 16px;
+  }
+  
+  .navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .navbar-dropdown-toggle {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .navbar-dropdown-content {
+    position: absolute;
+    background-color: #100f0f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .navbar-dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+  }
+  
+  .navbar-nested-dropdown {
+    position: relative;
+  }
+  
+  .navbar-nested-dropdown-toggle {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .navbar-nested-dropdown-content {
+    position: absolute;
+    background-color: #3f3636;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    display: none;
+    top: 0;
+    right: 100%;
+  }
+  
+  .navbar-nested-dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .navbar-nested-dropdown:hover .navbar-nested-dropdown-content {
+    display: block;
+  }
+  
+  .navbar-logout {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
