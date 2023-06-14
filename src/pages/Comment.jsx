@@ -18,10 +18,12 @@ import {
 import { getAuth } from "firebase/auth";
 import { Firestore } from 'firebase/firestore';
 
+
 const Comment = (props) => {
   const firestore = getFirestore();
   const [comments, setComments] = useState([props.pId]);
   useEffect(() => {
+    console.log(comments);
     Fetchdata();
 
     return () => {
@@ -64,7 +66,7 @@ const Frame = ({ name, date, value, id }) => {
 
   return (
     <>
-      <div key={id} className='' style={{border:'1px solid black', backgroundColor:'powderblue',marginTop:'3px',borderRadius:'30x',display:'grid',justifyContent:'center'}}>
+      <div key={id} className='' style={{border:'1px solid black', backgroundColor:'white',marginTop:'3px',borderRadius:'30x',display:'grid',justifyContent:'center'}}>
         <p style={{fontSize:'25px'}}>{name}</p>
         <p>{value}</p>
         <p style={{fontSize:'15px',color:'gray'}}>{date}</p>
